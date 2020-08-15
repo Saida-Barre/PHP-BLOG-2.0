@@ -8,6 +8,7 @@ if($responseString !==FALSE){
     //var_dump($responseObj); - tested and shows the decoding 
     $results = $responseObj->articles;
     //var_dump($results);//now test has passed we can now access all articles in the aray
+    return $results;
     } else {
         echo 'could not interprest API reponse';
     } 
@@ -15,6 +16,7 @@ if($responseString !==FALSE){
         echo 'unable tp connect/retrieve data from API.';
 
     }
+    return FALSE;
 }
 
 
